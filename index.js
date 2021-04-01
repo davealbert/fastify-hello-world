@@ -15,7 +15,8 @@ fastify.get('/', async (request, reply) => {
       date: new Date(),
       hash: hash(),
       hello: 'world',
-      env: process.env.NODE_ENV || 'missing'
+      env: process.env.NODE_ENV || 'missing',
+      version: process.env.VERSION || 'missing'
     }
   }
 })
